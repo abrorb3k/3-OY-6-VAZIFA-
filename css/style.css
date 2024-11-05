@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1240px;
+    width: 100%;
+    margin: 110px auto;
+}
+.section-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 67px;
+}
+h1{
+    font-family: "Exo 2",sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 65px;
+    color: #363738;
+    padding-bottom: 40px;
+}
+.nashi{
+    width: 87%;
+    font-family: "PT Sans",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6B6B6C;
+    padding-bottom: 40px;
+}
+.uznat>a{
+    text-decoration: none;
+    font-family: "PT Sans",sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #363738;
+    border-bottom: 4px solid #FFCE50;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.uznat>a:hover{
+    color: blue;
+}
+
+/* container-2 */
+.container-2{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+.section-2{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 56px;
+    box-shadow: 3px 3px 10px #CCC;
+    margin-bottom: 67px;
+    border-radius: 20px;
+}
+.card{
+    width: 23%;
+    border-left: 2px solid gray;
+    padding-left: 64px;
+    margin-right: 121px;
+
+}
+h3{
+    width: 228px;
+    font-family: "Exo 2",sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #363738;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+.lorem{
+    width: 40%;
+    font-family: "PT Sans",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6B6B6C;
+}
+.card-1{
+ width: 24%;
+ padding-left:80px;
+ margin-right: 105px;
+}
+
+/* container-3 */
+.container-3{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.list-1{
+    display: flex;
+    width: 447px;
+    align-items: center;
+    padding-bottom: 62px;
+}
+h4{
+    font-family: "Exo 2",sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #363738;
+}
+.ipsum{
+    font-family: "PT Sans",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6B6B6C;
+}
+.list-text{
+    padding-left: 40px;
+}
+
+
+
+@media screen and (max-width:768px){
+    .container,.container-2,.container-3{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .section-1{
+        display: block;
+        text-align: center;
+    }
+    .image-1{
+        padding-top: 73px;
+    }
+    .nashi{
+        margin: 0 auto;
+        width: 650px;
+    }
+    .list-1{
+        width: 499px;
+        border-left: none;
+    }
+
+
+
+    .section-2{
+        display: flex;
+        justify-content: center;
+        box-shadow: none;
+    }
+    h3{
+        width: 100%;
+        padding-top: 0px;
+    }
+    
+    .card,.card-1{
+        padding-right: 40px;
+        display: flex;
+        margin: 0 auto;
+        padding-left: 32px;
+        border-radius: 20px;
+        border-left: none;
+        box-shadow: 3px 3px 10px #CCC;
+        padding-bottom: 47px;
+        padding-top: 32px;
+        width: 600px;
+        display: flex;
+    }
+
+
+
+    .section-2{
+        display: flex;
+        flex-wrap: wrap;
+        gap:16px;
+    }
+    
+    .text-8{
+        padding-left: 32px;
+    }
+}
+
+
+@media screen and (max-width:375px){
+    .container,.container-2,.container-3{
+        width: 90%;
+        display: flex;
+        justify-content: start;
+    }
+    .section-1{
+        display: block;
+        text-align: start;
+    }
+    h3{
+        width: 100%;
+    }
+    .nashi{
+        width: 70%;
+        text-align: start;
+        margin-left: 0;
+    }
+    .section-2{
+        box-shadow: 3px 3px 10px #ccc;
+    }
+    .card,.card-1{
+        justify-content: center;
+        display: block;
+        box-shadow: none;
+        margin-right: 0px;
+    }
+    .text-8{
+        padding-top: 16px;
+        padding-left: 0px;
+        width: 60%;
+        display: block;
+    }
+    .list-text{
+        width: 330px;
+    }
+}
